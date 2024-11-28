@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Webstudio Advertising brochure" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
     <!-- Normalize -->
@@ -59,12 +59,67 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-button" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="icons-menu-button" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link active" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-phone">
+                <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-menu-list">
+            <ul class="mobile-menu-socials">
+              <li class="icons-socials"></li>
+              <li class="icons-socials"></li>
+              <li class="icons-socials"></li>
+              <li class="icons-socials"></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- Title -->
-      <section class="page-title">
+      <section class="page-title hidden">
         <div class="container">
           <h1 class="title-item">Effective Solutions for Your Business</h1>
           <button class="button" type="button" data-modal-open>
@@ -74,7 +129,7 @@
       </section>
 
       <!-- Section About us -->
-      <section class="page-about">
+      <section class="page-about hidden">
         <div class="container">
           <h2 class="visually-hidden">About us</h2>
           <ul class="list-about">
@@ -131,7 +186,7 @@
       </section>
 
       <!-- Section Our team -->
-      <section class="page-team">
+      <section class="page-team hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -379,7 +434,7 @@
       </section>
 
       <!-- Section Portfolio -->
-      <section class="page-portfolio">
+      <section class="page-portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -509,7 +564,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-container">
         <div class="footer-box">
           <a class="logo footer-logo" href="./index.html"
@@ -594,7 +649,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop-overlay" data-modal>
+    <div class="backdrop-overlay hidden" data-modal>
       <div class="modal">
         <button class="close-button" type="button" data-modal-close>
           <svg class="icons-modal-button" width="8" height="8">
@@ -687,5 +742,6 @@
 
     <!-- Script Js -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
