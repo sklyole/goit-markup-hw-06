@@ -98,19 +98,59 @@
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="mobile-menu-contacts-phone">
-                <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+              <li class="mobile-menu-contacts-item">
+                <a class="mobile-menu-contacts-phone" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
               </li>
             </ul>
           </address>
-          <div class="mobile-menu-list">
+          <div class="mobile-menu-wrapper">
             <ul class="mobile-menu-socials">
-              <li class="icons-socials"></li>
-              <li class="icons-socials"></li>
-              <li class="icons-socials"></li>
-              <li class="icons-socials"></li>
+              <li class="icons-socials">
+                <a
+                  class="link-socials"
+                  href="http://www.instagram.com"
+                  target="_blank"
+                >
+                  <svg class="icons-socials-image" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-socials">
+                <a
+                  class="link-socials"
+                  href="http://www.twitter.com"
+                  target="_blank"
+                >
+                  <svg class="icons-socials-image" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-socials">
+                <a
+                  class="link-socials"
+                  href="http://www.facebook.com"
+                  target="_blank"
+                >
+                  <svg class="icons-socials-image" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-socials">
+                <a
+                  class="link-socials"
+                  href="http://www.linkedin.com"
+                  target="_blank"
+                >
+                  <svg class="icons-socials-image" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -119,7 +159,7 @@
 
     <main>
       <!-- Title -->
-      <section class="page-title hidden">
+      <section class="page-title">
         <div class="container">
           <h1 class="title-item">Effective Solutions for Your Business</h1>
           <button class="button" type="button" data-modal-open>
@@ -129,7 +169,7 @@
       </section>
 
       <!-- Section About us -->
-      <section class="page-about hidden">
+      <section class="page-about">
         <div class="container">
           <h2 class="visually-hidden">About us</h2>
           <ul class="list-about">
@@ -649,7 +689,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop-overlay hidden" data-modal>
+    <div class="backdrop-overlay" data-modal>
       <div class="modal">
         <button class="close-button" type="button" data-modal-close>
           <svg class="icons-modal-button" width="8" height="8">
@@ -730,8 +770,10 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="checkbox-link" href="#">Privacy Policy</a>
+              <span class="form-privacy">
+                I accept the terms and conditions of the
+                <a class="checkbox-link" href="#">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
