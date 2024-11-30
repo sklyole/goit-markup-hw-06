@@ -280,7 +280,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* padding-top: 8px; */ duplicate for title about?
+  /* padding-top: 8px; */
 }
 
 .visually-hidden {
@@ -295,7 +295,6 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 /* #endregion */
 
