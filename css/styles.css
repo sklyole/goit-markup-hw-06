@@ -770,6 +770,110 @@ button {
 
 /* #endregion */
 
+/* #region Footer Mob */
+.page-footer {
+  padding: 96px 0 96px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo .logo-part {
+  color: #f4f4fd;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.footer-content {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 288px;
+  margin-bottom: 72px;
+}
+
+.footer-wrapper-media {
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.footer-caption {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-socials .icons-socials-image {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-socials .link-socials:hover,
+.footer-socials .link-socials:focus {
+  background-color: #31d0aa;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .footer-box {
+    margin-right: 24px;
+  }
+  .footer-content {
+    max-width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .page-footer {
+    padding: 100px 0 100px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-box {
+    margin-right: 120px;
+  }
+
+  .footer-wrapper-media {
+    margin-right: 80px;
+  }
+}
+/* #endregion */
+
+.mobile-menu-socials {
+  display: flex;
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.mobile-menu-socials .icons-socials-image {
+  width: 24px;
+  height: 24px;
+}
+
 /* #region Modal Mob*/
 .backdrop-overlay {
   background-color: rgba(46, 47, 66, 0.4);
