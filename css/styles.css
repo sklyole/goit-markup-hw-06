@@ -403,12 +403,22 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-people-office.jpg);
+    url(../images/herophoto/hero-people-office_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 320px;
   margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .page-title {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herophoto/hero-people-office_mob@2x.jpg);
+  }
 }
 
 .title-item {
@@ -447,10 +457,26 @@ button {
   background-color: #404bbf;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .page-title {
     padding: 112px 0;
     max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herophoto/hero-people-office_tab@1x.jpg);
+  }
+
+  @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .page-title {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/herophoto/hero-people-office_tab@2x.jpg);
+    }
   }
 
   .title-item {
@@ -461,13 +487,28 @@ button {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media only screen and (min-width: 1158px) {
   .page-title {
     padding: 188px 0;
     max-width: 1440px;
     margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herophoto/hero-people-office_desc@1x.jpg);
   }
 
+  @media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .page-title {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/herophoto/hero-people-office_desc@2x.jpg);
+    }
+  }
   .title-item {
     margin: 0 auto 45px;
   }
@@ -570,7 +611,7 @@ button {
 }
 /* #endregion */
 
-/* #region Section Our team Mob */
+/* #region Our team Mob */
 .page-team {
   background-color: #f4f4fd;
   padding: 96px 0 96px;
