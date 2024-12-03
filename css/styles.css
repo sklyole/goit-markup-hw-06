@@ -807,6 +807,27 @@ button {
 
 /* #endregion */
 
+/* #region Portfolio images */
+.portfolio-images {
+  width: 288px;
+  height: 280px;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-images {
+    width: 356px;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-images {
+    width: 360px;
+    height: 300px;
+  }
+}
+
+/* #endregion */
 /* #region Footer Mob */
 .page-footer {
   padding: 96px 0 96px;
