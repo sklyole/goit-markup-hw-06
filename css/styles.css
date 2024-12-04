@@ -152,7 +152,6 @@ button {
   border: none;
   padding: 0;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .burger-icon {
@@ -255,7 +254,6 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
     padding: 24px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 /* #endregion */
@@ -828,6 +826,7 @@ button {
 }
 
 /* #endregion */
+
 /* #region Footer Mob */
 .page-footer {
   padding: 96px 0 96px;
@@ -946,7 +945,6 @@ button {
   height: 40px;
   color: #fff;
   background-color: #4d5ae5;
-  cursor: pointer;
 }
 
 .icons-button-image {
@@ -1063,8 +1061,8 @@ button {
   padding: 63px 16px 16px;
 }
 
-.backdrop-overlay:not(is-open) .modal {
-  transform: translate(-50%, -50%), scale(1.5);
+.backdrop-overlay:not(.is-open) .modal {
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .close-button {
@@ -1078,7 +1076,6 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1268,7 +1265,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  cursor: pointer;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
